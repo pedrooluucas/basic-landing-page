@@ -1,6 +1,6 @@
 function getProjects(){
     const urlGitHub = 'https://api.github.com/users/pedrooluucas/repos'
-    var loadingElement = document.getElementById('carregando')
+    var loadingElement = document.getElementById('loading')
 
     fetch(urlGitHub,{
         method: 'GET',
@@ -17,7 +17,7 @@ function getProjects(){
 }
 
 function showProjects(data){
-    var listElement = document.getElementById('meus-projetos')
+    var listElement = document.getElementById('my-projects-list')
     for(let i = 0; i < data.length; i++)
     {
         let div = document.createElement("div")

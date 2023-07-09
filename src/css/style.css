@@ -192,6 +192,44 @@ strong{
     text-align: justify;
 }
 
+.quarta-sessao{
+    background-color: var(--dark2);
+}
+
+.quarta-sessao h2{
+    color: var(--dark5);
+}
+
+.link-experience{
+    text-decoration: underline;
+    color: var(--dark4);
+}
+
+.link-experience:hover{
+    color: var(--dark5);
+    transition: .4s;
+}
+
+#my-projects-list{
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#my-projects-list a{
+    text-decoration: none;
+    color: var(--dark5);
+    text-decoration-line: underline;
+}
+
+#my-projects-list a:hover{
+    transition: .4s;
+    color: var(--dark4);
+}
+
 :is(.img-profile,.quem-sou-eu){
     box-shadow: 1px 1px 1px 1px var(--cyan1);
 }
@@ -200,12 +238,15 @@ footer{
     padding: 4rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
 }
 
 footer > div{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 2rem;
 }
+
+
+
 
